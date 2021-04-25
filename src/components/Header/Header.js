@@ -1,45 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
-import titleImg from "./title-img.png";
-import NavMenu from "../NavMenu/NavMenu";
 
-const Header = ({ setNavShown, navShown }) => {
-  const [showNav, setShowNav] = useState(false);
-
-  const onHandleClickNav = () => {
-    setShowNav(!showNav);
-    setNavShown(!navShown);
-  };
-
+const Header = () => {
   return (
     <header>
-      <div className="header-container">
-        <div className="header-title-container">
-          <img src={titleImg} alt="" />
-        </div>
-      </div>
-      <div className="social-media-container">
-        <div className="nav-items">
-          <a href="https://www.facebook.com/farrellfitness17/">
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-        </div>
-        <div className="nav-items">
-          <a href="https://www.instagram.com/farrellfitness17/">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </div>
-        <div className="nav-items">
-          <FontAwesomeIcon icon={faShoppingBag} />
-        </div>
-        <div className="nav-items" onClick={onHandleClickNav}>
-          <FontAwesomeIcon icon={faBars} />
-        </div>
-      </div>
-      {showNav && <NavMenu onHandleClickNav={onHandleClickNav} />}
+      <img
+        src={`${process.env.PUBLIC_URL}/title-img.png`}
+        alt="titleImage"
+        className="logo"
+      />
+      <nav>
+        <ul className="nav__links">
+          <li>
+            <Link to="/">HOME</Link>
+          </li>
+          <li>
+            <Link to="/">GYM</Link>
+          </li>
+          <li>
+            <Link to="/">GOLF</Link>
+          </li>
+          <li>
+            <Link to="/">CLASSES</Link>
+          </li>
+          <li>
+            <Link to="/">ABOUT</Link>
+          </li>
+        </ul>
+      </nav>
+      <button>Contact</button>
     </header>
   );
 };

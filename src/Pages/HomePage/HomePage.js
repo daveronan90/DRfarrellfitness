@@ -1,31 +1,18 @@
 import React from "react";
-import MainVideo from "../../components/MainVideo/MainVideo";
-import ServicesList from "../../components/ServicesList/ServicesList";
+import Card from "../../components/Card/Card";
 
 import "./HomePage.scss";
 
 const HomePage = () => {
   return (
-    <div className="homepage-container">
-      <MainVideo />
-      <ServicesList />
-      <h2>
-        Follow us on{" "}
-        <a
-          className="social-media-links"
-          href="https://www.instagram.com/farrellfitness17/"
-        >
-          Instagram
-        </a>{" "}
-        and{" "}
-        <a
-          className="social-media-links"
-          href="https://www.facebook.com/farrellfitness17/"
-        >
-          Facebook
-        </a>{" "}
-        to keep up to date. . .
-      </h2>
+    <div className="hp-container">
+      <div className="slogan">
+        <h1>
+          <span>FITNESS</span> IS HAPPINESS
+        </h1>
+        <p>Exercise Really Makes You Happier</p>
+      </div>
+      <Card />
     </div>
   );
 };

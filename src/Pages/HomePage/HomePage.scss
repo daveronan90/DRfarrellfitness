@@ -1,12 +1,29 @@
-.homepage-container {
-  h2 {
-    margin-left: 16px;
+.hp-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
 
-    .social-media-links {
-      color: chocolate;
-      transition: 0.3s;
+  .slogan {
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .card {
+    grid-row: 2/3;
+    grid-gap: 33%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  h1 {
+    span {
+      color: white;
+      transition: all 0.3s ease 0s;
+
       &:hover {
-        color: white;
+        color: black;
       }
     }
   }

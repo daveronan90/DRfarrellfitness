@@ -1,3 +1,14 @@
-.app {
-    width: 50%;
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+header {
+  grid-row: 1/2;
+}
+
+main {
+  background: no-repeat center/cover url(./background.png);
+  grid-row: 2/3;
 }
