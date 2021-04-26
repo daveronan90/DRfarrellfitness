@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/DRfarrellfitness/static/css/main.0a73135d.chunk.css",
+    "main.js": "/DRfarrellfitness/static/js/main.193d6013.chunk.js",
+    "main.js.map": "/DRfarrellfitness/static/js/main.193d6013.chunk.js.map",
+    "runtime-main.js": "/DRfarrellfitness/static/js/runtime-main.2e5c14cf.js",
+    "runtime-main.js.map": "/DRfarrellfitness/static/js/runtime-main.2e5c14cf.js.map",
+    "static/css/2.7b169f6b.chunk.css": "/DRfarrellfitness/static/css/2.7b169f6b.chunk.css",
+    "static/js/2.4325eb84.chunk.js": "/DRfarrellfitness/static/js/2.4325eb84.chunk.js",
+    "static/js/2.4325eb84.chunk.js.map": "/DRfarrellfitness/static/js/2.4325eb84.chunk.js.map",
+    "static/js/3.1a221192.chunk.js": "/DRfarrellfitness/static/js/3.1a221192.chunk.js",
+    "static/js/3.1a221192.chunk.js.map": "/DRfarrellfitness/static/js/3.1a221192.chunk.js.map",
+    "index.html": "/DRfarrellfitness/index.html",
+    "static/css/2.7b169f6b.chunk.css.map": "/DRfarrellfitness/static/css/2.7b169f6b.chunk.css.map",
+    "static/css/main.0a73135d.chunk.css.map": "/DRfarrellfitness/static/css/main.0a73135d.chunk.css.map",
+    "static/js/2.4325eb84.chunk.js.LICENSE.txt": "/DRfarrellfitness/static/js/2.4325eb84.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/DRfarrellfitness/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e5c14cf.js",
+    "static/css/2.7b169f6b.chunk.css",
+    "static/js/2.4325eb84.chunk.js",
+    "static/css/main.0a73135d.chunk.css",
+    "static/js/main.193d6013.chunk.js"
+  ]
+}
