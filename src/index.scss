@@ -1,7 +1,8 @@
 html,
 body {
+  font-size: 17px;
   box-sizing: border-box;
-  background: black;
+  background: rgb(26, 26, 26);
   margin: 0;
   padding: 0;
   color: white;
@@ -16,4 +17,28 @@ body {
     text-decoration: none;
     color: white;
   }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
 }

@@ -1,18 +1,16 @@
 import React from "react";
-import Card from "../../components/Card/Card";
-
 import "./HomePage.scss";
+
+import services from "../../fixtures/services";
+import priceCards from "../../fixtures/priceCards";
+
+import Carousel from "../../components/Carousel/Carousel";
 
 const HomePage = () => {
   return (
     <div className="hp-container">
-      <div className="slogan">
-        <h1>
-          <span>FITNESS</span> IS HAPPINESS
-        </h1>
-        <p>Exercise Really Makes You Happier</p>
-      </div>
-      <Card />
+      <Carousel carouselItems={services} carouselType="services" />
+      <Carousel carouselItems={priceCards} carouselType="priceCards"/>
     </div>
   );
 };

@@ -9,9 +9,13 @@ function App() {
   return (
     <Router>
       <Header />
+      <video autoPlay muted disablePictureInPicture loop>
+        <source src={`${process.env.PUBLIC_URL}/Equipment video updated.mp4`} />
+      </video>
       <main>
         <Switch>
-          <Route exact path="/" component={HomePage}></Route>
+          <Route exact path="/" component={HomePage}>
+          </Route>
         </Switch>
       </main>
     </Router>

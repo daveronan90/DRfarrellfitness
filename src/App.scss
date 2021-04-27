@@ -1,14 +1,12 @@
 #root {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
+  display: flex;
+  flex-direction: column;
 
-header {
-  grid-row: 1/2;
-}
-
-main {
-  background: no-repeat center/cover url(./background.png);
-  grid-row: 2/3;
+  video {
+    object-fit: cover;
+    width: 100%;
+  }
+  main {
+    height: 50%;
+  }
 }
