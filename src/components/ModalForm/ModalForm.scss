@@ -22,14 +22,14 @@
 }
 
 .modal {
-  background: white;
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   position: fixed;
   left: 0;
   top: 0;
   margin: 10% 10%;
   width: 80vw;
-  height: 90vh;
+  height: 70vh;
   z-index: 4;
 
   form {

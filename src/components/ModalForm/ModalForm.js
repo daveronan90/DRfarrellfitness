@@ -65,7 +65,7 @@ const ModalForm = ({ modalShow, setModalShow }) => {
           />
           <textarea
             cols="30"
-            rows="10"
+            rows="3"
             placeholder="Message"
             className="form__item"
             value={message}
