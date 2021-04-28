@@ -1,57 +1,63 @@
 const services = [
   {
     id: 1,
+    imageUrl: "FF.png",
+    title: "OPEN GYM",
+    routeUrl: "/gym",
+  },
+  {
+    id: 2,
     imageUrl: "classesAndMembership.jpg",
     title: "CLASSES & MEMBERSHIP",
     routeUrl: "/classes",
   },
   {
-    id: 2,
-    imageUrl: "golfSpecificTraining.jpg",
-    title: "GOLF SPECIFIC TRAINING",
-    routeUrl: "/golf",
-  },
-  {
     id: 3,
-    imageUrl: "merchandise.png",
-    title: "MERCHANDISE",
-    routeUrl: "/shop",
-  },
-  {
-    id: 4,
-    imageUrl: "nutrition.png",
-    title: "NUTRITION",
-    routeUrl: "/nutrition",
-  },
-  {
-    id: 5,
-    imageUrl: "personalTraining.jpeg",
+    imageUrl: "personalTraining.jpg",
     title: "PERSONAL TRAINING",
     routeUrl: "/personaltraining",
   },
   {
-    id: 6,
+    id: 4,
     imageUrl: "physicalTherapy.jpg",
     title: "PHYSICAL THERAPY",
     routeUrl: "/physicaltherapy",
   },
   {
-    id: 7,
+    id: 5,
     imageUrl: "teamTraining.jpeg",
     title: "TEAM TRAINING",
     routeUrl: "/teams",
   },
   {
-    id: 8,
+    id: 6,
+    imageUrl: "nutrition.png",
+    title: "NUTRITION",
+    routeUrl: "/nutrition",
+  },
+  {
+    id: 7,
     imageUrl: "tenWeekBodyTransformations.jpeg",
     title: "10 WEEK BODY TRANSFORMATIONS",
     routeUrl: "/transformations",
   },
   {
-    id: 9,
+    id: 8,
     imageUrl: "threeDBodyScans.png",
     title: "3D BODY SCANS",
     routeUrl: "/styku",
+  },
+  {
+    id: 9,
+    imageUrl: "merchandise.png",
+    title: "MERCHANDISE",
+    routeUrl: "/shop",
+  },
+  {
+    id: 10,
+    imageUrl: "golfSpecificTraining.jpg",
+    title: "GOLF SPECIFIC TRAINING",
+    routeUrl: "/golf",
   },
 ];
 

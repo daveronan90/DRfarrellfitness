@@ -22,19 +22,24 @@ const Carousel = ({ carouselItems, carouselType }) => {
     <div>
       <div className="carousel__container">
         <Slider {...settings}>
-          {carouselItems.map((item) => {
+          {carouselItems.map((item, index) => {
             switch (carouselType) {
               case "services":
                 return (
                   <ServiceCard
                     {...item}
-                    key={Math.floor(Math.random() * 100)}
+                    key={index}
+                    className="services__carousel"
                   />
                 );
 
-              case "priceCards":
+              case "price__cards":
                 return (
-                  <PriceCard {...item} key={Math.floor(Math.random() * 100)} />
+                  <PriceCard
+                    {...item}
+                    key={index}
+                    className="priceCards__carousel"
+                  />
                 );
               default:
                 return null;

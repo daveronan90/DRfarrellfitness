@@ -1,0 +1,56 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(44, 44, 44);
+  color: grey;
+
+  .footer__media {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem 0 0.5rem 0;
+
+    a {
+      color: grey;
+    }
+
+    .instgram {
+      margin-left: 3rem;
+      border: 1px solid grey;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(200%);
+        transition: all 0.3s ease 0s;
+      }
+    }
+    .facebook {
+      border: 1px solid grey;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(200%);
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      margin: 0;
+      color: rgb(190, 90, 19);
+    }
+  }
+}

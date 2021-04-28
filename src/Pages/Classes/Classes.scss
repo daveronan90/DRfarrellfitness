@@ -1,0 +1,19 @@
+.classes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 10%;
+  word-wrap: break-word;
+  font-weight: 600;
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  p,
+  ul {
+    width: 100%;
+    text-align: left;
+  }
+}

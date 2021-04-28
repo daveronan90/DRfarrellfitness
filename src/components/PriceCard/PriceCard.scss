@@ -6,7 +6,7 @@
   flex-direction: column;
 
   .price__card__1 {
-    background-color: chocolate;
+    background-color: rgb(189,	90,	19);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-style: italic;
@@ -24,7 +24,7 @@
 
     h1,
     h2 {
-      color: chocolate;
+      color: rgb(189,	90,	19);
     }
 
     h2 {
@@ -51,7 +51,7 @@
     justify-content: center;
 
     button {
-      background-color: rgba(210, 105, 30, 1);
+      background-color: rgba(189,	90,	19, 1);
       border: none;
       color: white;
       padding: 1rem 4rem;
@@ -60,7 +60,7 @@
 
       &:hover {
         transition: 0.3s all ease 0s;
-        background-color: rgba(210, 105, 30, 0.7);
+        background-color: rgba(189,	90,	19, 0.7);
       }
     }
   }

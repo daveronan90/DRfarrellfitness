@@ -1,0 +1,22 @@
+.transfromations-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+  }
+  h4 {
+    text-align: justify;
+  }
+  .tranformations__price {
+    color: rgb(190, 90, 19);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+}

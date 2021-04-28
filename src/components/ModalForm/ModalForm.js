@@ -38,7 +38,9 @@ const ModalForm = ({ modalShow, setModalShow }) => {
     >
       <div className="modal">
         <form onSubmit={handleSubmit}>
-          <h3>Sign Up</h3>
+          <h3>
+            Sign Up<span onClick={() => setModalShow(false)}>X</span>
+          </h3>
           <input
             type="text"
             placeholder="Name"

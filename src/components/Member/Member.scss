@@ -1,0 +1,27 @@
+.personel {
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      img {
+        transform: scale(110%);
+        transition: all 0.3s ease 0s;
+      }
+      span {
+        transition: all 0.3s ease 0s;
+        color: rgb(190, 90, 19);
+      }
+    }
+    h5 {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      color: rgb(190, 90, 19);
+    }
+  }

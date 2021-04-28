@@ -4,6 +4,12 @@ header {
   flex-direction: column;
   align-items: center;
 
+  img {
+    margin: 5% 10% 0 10%;
+    width: 80%;
+    height: auto;
+  }
+
   .social__media {
     width: 100%;
     justify-content: space-evenly;
@@ -17,7 +23,7 @@ header {
     }
 
     button {
-      background-color: rgba(210, 105, 30, 1);
+      background-color: rgba(189, 90, 19, 1);
       border: none;
       color: white;
       padding: 0.5rem 1rem;
@@ -26,14 +32,14 @@ header {
 
       &:hover {
         transition: 0.3s all ease 0s;
-        background-color: rgba(210, 105, 30, 0.7);
+        background-color: rgba(189, 90, 19, 0.7);
       }
     }
 
     a {
       &:hover {
         transition: all 0.3s ease 0s;
-        color: chocolate;
+        color: rgb(189, 90, 19);
       }
     }
   }
@@ -43,11 +49,12 @@ header {
     justify-content: center;
     padding: 1rem 0;
     align-items: center;
-
+    
     &:hover {
       .burger__icon {
+        color: rgb(189, 90, 19);
         transition: all 0.3s ease 0s;
-        color: chocolate;
+
       }
     }
   }
@@ -60,12 +67,13 @@ nav {
 }
 
 .nav__link {
-  min-width: 120px;
-  margin: 0 auto 1rem 0;
-  background: rgba(26, 26, 26, 0.9);
+  min-width: 220px;
+  font-size: 0.8rem;
+  margin: 0 auto 0.5rem 0;
+  background: rgba(26, 26, 26, 1);
   z-index: 2;
-  padding: 1rem 1rem;
-  border: 4px solid rgba(210, 105, 30, 0.7);
+  padding: 0.3rem 1rem;
+  border: 2px solid rgba(189, 90, 19, 0.7);
   border-left: 0;
   border-top: 0;
   border-top-right-radius: 10px;
@@ -75,7 +83,7 @@ nav {
   }
 
   &:hover {
-    color: chocolate;
+    color: rgb(189, 90, 19);
     filter: brightness(150%);
     padding-left: 5rem;
     transition: all 0.3s ease 0s;
@@ -98,5 +106,3 @@ nav {
   transform: translateX(-110%);
   transition: all 500ms cubic-bezier(1, 0, 0, 1);
 }
-
-
