@@ -9,7 +9,7 @@ const TeamTraining = () => {
       {teamTraining.map(({ description, imageUrl }) => (
         <div>
           <img src={`${process.env.PUBLIC_URL + imageUrl}`} alt={imageUrl} />
-          <h3>{description}</h3>
+          <h4>{description}</h4>
         </div>
       ))}
     </div>

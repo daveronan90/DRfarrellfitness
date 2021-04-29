@@ -1,0 +1,19 @@
+@import "../../index.scss";
+
+.merch-page {
+  width: 100vw;
+  color: $main;
+  .merch-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    grid-gap: 1rem;
+
+    .merch-item {
+      text-align: center;
+    }
+  }
+}

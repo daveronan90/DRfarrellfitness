@@ -1,9 +1,10 @@
-.carousel__container {
-  max-width: 100vw;
-  margin-bottom: 3rem;
+@import "../../index.scss";
 
+.carousel__container {
+  margin: 3rem auto;
+  
   .slick-dots li button::before {
-    color: chocolate;
-    font-size: 10px;
+    color: $main;
+    font-size: 15px;
   }
 }

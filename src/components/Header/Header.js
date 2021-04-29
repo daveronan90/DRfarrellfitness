@@ -15,15 +15,13 @@ const Header = () => {
   const [modalShow, setModalShow] = useState(false);
 
   return (
-    <div>
-      <header>
-        <Link to="/">
-          <img src={`${process.env.PUBLIC_URL}/title-img2.png`} alt="title" />
-        </Link>
-        <div className="burger" onClick={() => setToggleNav(!toggleNav)}>
-          <FontAwesomeIcon icon={faBars} className="burger__icon" />
-        </div>
-      </header>
+    <header>
+      <Link to="/">
+        <img src={`${process.env.PUBLIC_URL}/title-img2.png`} alt="title" />
+      </Link>
+      <div className="burger" onClick={() => setToggleNav(!toggleNav)}>
+        <FontAwesomeIcon icon={faBars} className="burger__icon" />
+      </div>
       <nav>
         {services.map(({ title, routeUrl }, index) => (
           <CSSTransition
@@ -31,12 +29,12 @@ const Header = () => {
             unmountOnExit
             timeout={500}
             classNames="menu"
+            key={`${index}`}
           >
             <Link
               to={routeUrl}
               className={`nav__link`}
               onClick={() => setToggleNav(!toggleNav)}
-              key={index}
             >
               {title}
             </Link>
@@ -44,7 +42,7 @@ const Header = () => {
         ))}
       </nav>
       <ModalForm modalShow={modalShow} setModalShow={setModalShow} />
-    </div>
+    </header>
   );
 };
 

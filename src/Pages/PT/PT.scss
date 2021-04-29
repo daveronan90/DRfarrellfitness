@@ -1,28 +1,8 @@
-.PT__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10% 10%;
-  word-wrap: break-word;
-  font-weight: 600;
+@import "../../index.scss";
 
-  h1 {
-    width: 100%;
+.PT__page {
+  h4 {
     text-align: center;
+    color: $main;
   }
-
-  p,
-  ul {
-    width: 100%;
-    text-align: left;
-  }
-
-  h3 {
-    text-align: center;
-    margin: 0;
-    width: 100%;
-    color: rgb(190, 90, 19);
-  }
-
-  
 }

@@ -14,6 +14,7 @@ import Transformations from "./Pages/Transformations/Transformations";
 import Styku from "./Pages/Styku/Styku";
 import Shop from "./Pages/Shop/Shop";
 import Golf from "./Pages/Golf/Golf";
+import Gym from "./Pages/Gym/Gym";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/gym" component={Gym} />
           <Route exact path="/classes" component={Classes} />
           <Route exact path="/personalTraining" component={PT} />
           <Route exact path="/physicaltherapy" component={PhysicalTherapy} />
@@ -32,8 +34,8 @@ function App() {
           <Route exact path="/shop" component={Shop} />
           <Route exact path="/golf" component={Golf} />
         </Switch>
+        <Footer />
       </main>
-      <Footer />
     </Router>
   );
 }

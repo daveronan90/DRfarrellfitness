@@ -7,7 +7,7 @@ const ServiceCard = ({ routeUrl, title, imageUrl }) => {
   return (
     <div className="service__card">
       <Link to={routeUrl}>
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         <img
           src={`${process.env.PUBLIC_URL}/${imageUrl}`}
           alt={title}

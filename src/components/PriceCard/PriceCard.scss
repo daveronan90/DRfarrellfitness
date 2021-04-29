@@ -1,12 +1,14 @@
+@import "../../index.scss";
+
 .price__card {
   margin: 0 3rem 1rem 3rem;
-  background: rgb(85, 85, 85);
+  background: lighten($color: $bg, $amount: 15%);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
 
   .price__card__1 {
-    background-color: rgb(189,	90,	19);
+    background-color: $main;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-style: italic;
@@ -20,11 +22,11 @@
     display: flex;
     justify-content: center;
     font-style: italic;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lighten($color: $bg, $amount: 40%);
 
     h1,
     h2 {
-      color: rgb(189,	90,	19);
+      color: $main;
     }
 
     h2 {
@@ -39,9 +41,8 @@
     }
   }
   .price__card__info {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lighten($color: $bg, $amount: 40%);
     text-align: center;
-    opacity: 0.7;
   }
 
   .price__card__button {
@@ -51,16 +52,16 @@
     justify-content: center;
 
     button {
-      background-color: rgba(189,	90,	19, 1);
+      background-color: $main;
       border: none;
-      color: white;
+      color: $text-color;
       padding: 1rem 4rem;
       border-radius: 2px;
       font-weight: bolder;
 
       &:hover {
-        transition: 0.3s all ease 0s;
-        background-color: rgba(189,	90,	19, 0.7);
+        transition: $hover-trans;
+        background-color: opacify($color: $main, $amount: 0.7);
       }
     }
   }

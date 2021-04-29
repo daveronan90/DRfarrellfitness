@@ -7,7 +7,7 @@ import "./PT.scss";
 
 const PT = () => {
   return (
-    <div className="PT__container">
+    <div className="PT__page">
       <h1>Personal Training</h1>
       <p>
         Sometimes we need a little help. A gentle push to get us started and to
@@ -40,7 +40,7 @@ const PT = () => {
       {team.map((member) => (
         <Member {...member} />
       ))}
-      <h3>ALL YOU NEED TO DO IS TAKE THE FIRST STEP AND CALL US</h3>
+      <h4>ALL YOU NEED TO DO IS TAKE THE FIRST STEP AND CALL US</h4>
     </div>
   );
 };

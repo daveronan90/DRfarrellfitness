@@ -1,124 +1,132 @@
-import React from "react";
+import React, { useState } from "react";
 
-import './ClassesTimetable.scss'
+import "./ClassesTimetable.scss";
 
 const ClassesTimetable = () => {
+  const [zoomTable, setZoomTable] = useState(false);
   return (
-    <div>
-      <div class="table">
-        <div class="header"></div>
-        <div class="header">MONDAY</div>
-        <div class="header">TUESDAY</div>
-        <div class="header">WEDNESDAY</div>
-        <div class="header">THURSDAY</div>
-        <div class="header">FRIDAY</div>
-        <div class="header">SATURDAY</div>
-        <div class="header">SUNDAY</div>
+    <div onClick={() => setZoomTable(!zoomTable)}>
+    <h3>CLASSES TIMETABLE {new Date().getFullYear()}</h3>
+      <div className="table" style={zoomTable ? {} : {}}>
+        <div className="header">MONDAY</div>
+        <div className="header">
+          <img
+            className="logo"
+            src={`${process.env.PUBLIC_URL}/FFfeathered.png`}
+            alt="FF"
+          />
+        </div>
+        <div className="header">TUESDAY</div>
+        <div className="header">WEDNESDAY</div>
+        <div className="header">THURSDAY</div>
+        <div className="header">FRIDAY</div>
+        <div className="header">SATURDAY</div>
+        <div className="header">SUNDAY</div>
 
-        <div class="time">7:00AM</div>
-        <div class="classInfo"></div>
-        <div class="classInfo">
+        <div className="time">7:00AM</div>
+        <div className="classInfo"></div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo">
+        <div className="classInfo"></div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
 
-        <div class="time">9:30AM</div>
-        <div class="classInfo">
+        <div className="time">9:30AM</div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
 
-        <div class="time">10:45AM</div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
-        <div class="classInfo">STRENGTH</div>
-        <div class="classInfo">STRENGTH</div>
+        <div className="time">10:45AM</div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo">STRENGTH</div>
+        <div className="classInfo">STRENGTH</div>
 
-        <div class="time">4:15PM</div>
-        <div class="classInfo"></div>
-        <div class="classInfo">
+        <div className="time">4:15PM</div>
+        <div className="classInfo"></div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo">
+        <div className="classInfo"></div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
 
-        <div class="time">5:30PM</div>
-        <div class="classInfo">
+        <div className="time">5:30PM</div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">STRENGTH</div>
-        <div class="classInfo">
+        <div className="classInfo">STRENGTH</div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">STRENGTH</div>
-        <div class="classInfo">
+        <div className="classInfo">STRENGTH</div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
 
-        <div class="time">6:45PM</div>
-        <div class="classInfo">
+        <div className="time">6:45PM</div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo">
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
 
-        <div class="time">8:00PM</div>
-        <div class="classInfo"></div>
-        <div class="classInfo">
+        <div className="time">8:00PM</div>
+        <div className="classInfo"></div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo">
+        <div className="classInfo"></div>
+        <div className="classInfo">
           STRENGTH <br /> CONDITIONING
         </div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
-        <div class="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
+        <div className="classInfo"></div>
       </div>
     </div>
   );

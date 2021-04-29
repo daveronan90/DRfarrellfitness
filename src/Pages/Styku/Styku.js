@@ -5,7 +5,7 @@ import "./Styku.scss";
 const Styku = () => {
   return (
     <div className="styku-page">
-      <h2>3D Body Scanning at Farrell Fitness</h2>
+      <h2>3D Body Scanning</h2>
       <h4>Available to Members and Non-Members</h4>
       <img src={`${process.env.PUBLIC_URL}/styku.png`} alt="styku" />
       <p>
@@ -29,16 +29,8 @@ const Styku = () => {
         <li>Fast and Accurate Body Measurements</li>
         <li>Precisely Track Progress</li>
       </ul>
-      <h3>
-        Members
-        <br />
-        €40
-      </h3>
-      <h3>
-        Non-Members
-        <br />
-        €50
-      </h3>
+      <h3>Members €40</h3>
+      <h3>Non-Members €50</h3>
     </div>
   );
 };

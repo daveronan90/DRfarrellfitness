@@ -10,9 +10,7 @@ const Member = ({ title, name, imageUrl, caption }) => {
       <h5>{title}</h5>
       <h5>{name}</h5>
       <p>
-        Hi, and a warm welcome to Farrell Fitness. Personally I love meeting
-        people and connecting with them on a personal level. I try to gain as
-        much experience and knowledge from everyone I meet.{" "}
+        {caption}{" "}
         <span> Read More...</span>
       </p>
     </div>

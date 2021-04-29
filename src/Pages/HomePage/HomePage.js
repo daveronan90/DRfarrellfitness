@@ -9,7 +9,7 @@ import MainVideo from "../../components/MainVideo/MainVideo";
 
 const HomePage = () => {
   return (
-    <div className="hp-container">
+    <div className="home-page full-width">
       <MainVideo />
       <Carousel carouselItems={services} carouselType="services" />
       <Carousel carouselItems={priceCards} carouselType="price__cards" />

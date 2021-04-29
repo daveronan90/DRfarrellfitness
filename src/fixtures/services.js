@@ -1,7 +1,7 @@
 const services = [
   {
     id: 1,
-    imageUrl: "FF.png",
+    imageUrl: "FFfeathered.png",
     title: "OPEN GYM",
     routeUrl: "/gym",
   },

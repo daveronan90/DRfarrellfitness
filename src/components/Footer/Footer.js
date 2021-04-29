@@ -13,7 +13,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faFacebookF} className="facebook" />
         </a>
         <a href="https://www.instagram.com/farrellfitness17/">
-          <FontAwesomeIcon icon={faInstagram} className="instgram" />
+          <FontAwesomeIcon icon={faInstagram} className="instagram" />
         </a>
       </div>
       <h5>Find Us Here</h5>
