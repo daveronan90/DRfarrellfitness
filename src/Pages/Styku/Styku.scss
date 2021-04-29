@@ -1,22 +1,26 @@
 @import "../../index.scss";
 
 .styku-page {
-  img {
-    border-radius: 10px;
-  }
+  .styku-content {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      border-radius: 10px;
+    }
 
-  h2 {
-    text-align: center;
-  }
-  h4 {
-    border-bottom: 1px solid $text-color;
-    padding-bottom: 5%;
-    margin-top: 0;
-    text-align: center;
-  }
+    h2 {
+      text-align: center;
+    }
+    h4 {
+      border-bottom: 1px solid $text-color;
+      padding-bottom: 5%;
+      margin-top: 0;
+      text-align: center;
+    }
 
-  h3 {
-    text-align: left;
-    border-bottom: 1px solid $main;
+    h3 {
+      text-align: left;
+      border-bottom: 1px solid $main;
+    }
   }
 }

@@ -1,7 +1,11 @@
 @import "../../index.scss";
 
 .therapy-page {
-  h3 {
-    color: $main;
+  .therapy-content {
+    width: 80%;
+    margin: 0 auto;
+    h3 {
+      color: $main;
+    }
   }
 }

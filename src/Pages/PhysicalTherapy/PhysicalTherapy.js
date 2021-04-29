@@ -5,10 +5,11 @@ import "./PhysicalTherapy.scss";
 
 const PhysicalTherapy = () => {
   return (
-    <div className="therapy-page">
+    <div className="therapy-page full-width">
+    <div className="therapy-content">
       {physicalTherapyServices.map(
         ({ title, description, membersPrice, nonMembersPrice, imageUrl }) => (
-          <div>
+          <div key={title}>
             <img src={`${process.env.PUBLIC_URL + imageUrl}`} alt={title} />
             <h2>{title}</h2>
             <p>{description}</p>
@@ -17,6 +18,7 @@ const PhysicalTherapy = () => {
           </div>
         )
       )}
+    </div>
     </div>
   );
 };

@@ -39,7 +39,7 @@ const ModalForm = ({ modalShow, setModalShow }) => {
       <div className="modal">
         <form onSubmit={handleSubmit}>
           <h3>
-            Sign Up<span onClick={() => setModalShow(false)}>X</span>
+            Sign Up<div onClick={() => setModalShow(false)}>X</div>
           </h3>
           <input
             type="text"

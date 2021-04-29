@@ -7,7 +7,7 @@ import "./Gym.scss";
 const Gym = () => {
   return (
     <div className="gym-page full-width">
-      <MainVideo />
+      <MainVideo videoUrl="/mainVideo.mp4" />
       <div className="gym-content">
         <GymTimetable />
       </div>

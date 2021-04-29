@@ -12,7 +12,7 @@ const PriceCard = ({
   buttonCaption,
 }) => {
   return (
-    <div className="price__card" >
+    <div className="price__card">
       <div className="price__card__1">
         <p>
           {offerType} <span>{title}</span>
@@ -28,8 +28,8 @@ const PriceCard = ({
         </div>
       </div>
       {info.map((item) => (
-        <div className="price__card__info">
-          <p>{item}</p>
+        <div className="price__card__info" key={item[0]}>
+          <p className={item[1] ? "important" : ""}>{item}</p>
         </div>
       ))}
       <div className="price__card__button">

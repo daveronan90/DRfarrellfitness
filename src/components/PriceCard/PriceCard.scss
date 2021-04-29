@@ -43,6 +43,11 @@
   .price__card__info {
     border-bottom: 1px solid lighten($color: $bg, $amount: 40%);
     text-align: center;
+
+    .important {
+      animation: 2s pop infinite;
+      color: $main;
+    }
   }
 
   .price__card__button {
@@ -64,5 +69,22 @@
         background-color: opacify($color: $main, $amount: 0.7);
       }
     }
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(100%);
+    color: lighten($main, 100%);
+  }
+
+  50% {
+    transform: scale(150%);
+    color: lighten($main, 0%);
+  }
+
+  100% {
+    transform: scale(100%);
+    color: lighten($main, 100%);
   }
 }

@@ -1,8 +1,12 @@
 @import "../../index.scss";
 
-.PT__page {
-  h4 {
-    text-align: center;
-    color: $main;
+.pt-page {
+  .pt-content {
+    width: 80%;
+    margin: 0 auto;
+    h4 {
+      text-align: center;
+      color: $main;
+    }
   }
 }

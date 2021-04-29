@@ -1,16 +1,12 @@
 import React from "react";
+import MainVideo from "../../components/MainVideo/MainVideo";
 
 import "./Golf.scss";
 
 const Golf = () => {
   return (
     <div className="golf-page full-width">
-      <video
-        src={`${process.env.PUBLIC_URL}/trackman.mp4`}
-        autoPlay
-        muted
-        loop
-      ></video>
+      <MainVideo videoUrl="/trackman.mp4" />
       <div className="golf-content">
         <img src={`${process.env.PUBLIC_URL}/tm1.png`} alt="trackman" />
         <div className="golf-info">

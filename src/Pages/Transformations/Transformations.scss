@@ -1,11 +1,15 @@
 @import "../../index.scss";
 
 .transfromations-page {
-  h3 {
-    text-align: center;
-  }
+  .transfromations-content {
+    width: 80%;
+    margin: 0 auto;
+    h3 {
+      text-align: center;
+    }
 
-  .tranformations__price {
-    color: $main;
+    .tranformations__price {
+      color: $main;
+    }
   }
 }
