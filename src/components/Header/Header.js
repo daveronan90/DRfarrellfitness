@@ -10,9 +10,7 @@ import ModalForm from "../ModalForm/ModalForm";
 
 import services from "../../fixtures/services";
 
-
-const Header = () => {
-  const [toggleNav, setToggleNav] = useState(false);
+const Header = ({ toggleNav, setToggleNav }) => {
   const [modalShow, setModalShow] = useState(false);
 
   return (
@@ -23,7 +21,9 @@ const Header = () => {
       <div className="burger" onClick={() => setToggleNav(!toggleNav)}>
         <FontAwesomeIcon icon={faBars} className="burger__icon" />
       </div>
-      <button className='sign-up-button' onClick={() => setModalShow(true)}>SIGN UP NOW</button>
+      <button className="sign-up-button" onClick={() => setModalShow(true)}>
+        SIGN UP NOW
+      </button>
       <nav>
         {services.map(({ title, routeUrl }, index) => (
           <CSSTransition

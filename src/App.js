@@ -16,12 +16,18 @@ import Styku from "./Pages/Styku/Styku";
 import Shop from "./Pages/Shop/Shop";
 import Golf from "./Pages/Golf/Golf";
 import Gym from "./Pages/Gym/Gym";
+import { useState } from "react";
 
 function App() {
+  const [toggleNav, setToggleNav] = useState(false);
+
   return (
     <Router>
-      <Header />
-      <main>
+      <Header
+        toggleNav={toggleNav}
+        setToggleNav={setToggleNav}
+      />
+      <main onClick={() => setToggleNav(false)}>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/gym" component={Gym} />
