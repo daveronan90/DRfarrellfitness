@@ -3,7 +3,6 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.scss";
 
 import ServiceCard from "../ServiceCard/ServiceCard";
 import PriceCard from "../PriceCard/PriceCard";

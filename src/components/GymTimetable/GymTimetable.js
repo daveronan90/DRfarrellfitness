@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import "./GymTimetable.scss";
-
 const GymTimetable = () => {
   const [zoomTable, setZoomTable] = useState(false);
   return (

@@ -1,0 +1,26 @@
+.styku-page {
+  .styku-content {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+    h4 {
+      border-bottom: 1px solid $text-color;
+      padding-bottom: $s-size;
+      margin-top: 0;
+      text-align: center;
+    }
+    .styku-pricing {
+      width: 180px;
+      h3 {
+        text-align: left;
+        border-bottom: 1px solid $main;
+      }
+    }
+  }
+}

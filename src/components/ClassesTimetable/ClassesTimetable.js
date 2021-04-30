@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import "./ClassesTimetable.scss";
-
 const ClassesTimetable = () => {
   const [zoomTable, setZoomTable] = useState(false);
   return (

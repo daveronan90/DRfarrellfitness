@@ -1,7 +1,6 @@
 import React from "react";
-import physicalTherapyServices from "../../fixtures/physicalTherapyServices";
 
-import "./PhysicalTherapy.scss";
+import physicalTherapyServices from "../../fixtures/physicalTherapyServices";
 
 const PhysicalTherapy = () => {
   return (

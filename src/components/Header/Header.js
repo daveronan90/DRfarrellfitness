@@ -1,14 +1,15 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import ModalForm from "../ModalForm/ModalForm";
 
 import services from "../../fixtures/services";
 
-import "./Header.scss";
 
 const Header = () => {
   const [toggleNav, setToggleNav] = useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
       <div className="burger" onClick={() => setToggleNav(!toggleNav)}>
         <FontAwesomeIcon icon={faBars} className="burger__icon" />
       </div>
-      <button onClick={() => setModalShow(true)}>SIGN UP NOW</button>
+      <button className='sign-up-button' onClick={() => setModalShow(true)}>SIGN UP NOW</button>
       <nav>
         {services.map(({ title, routeUrl }, index) => (
           <CSSTransition

@@ -1,7 +1,6 @@
 import React from "react";
-import merchandise from "../../fixtures/merchandise";
 
-import "./Shop.scss";
+import merchandise from "../../fixtures/merchandise";
 
 const Shop = () => {
   return (

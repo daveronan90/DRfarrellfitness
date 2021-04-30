@@ -1,0 +1,14 @@
+.service__card {
+  text-align: center;
+
+  h4 {
+    color: $text-color;
+    text-shadow: 1px 1px 1px black;
+  }
+  &:hover {
+    h4 {
+      color: $main;
+      transition: $hover-trans;
+    }
+  }
+}

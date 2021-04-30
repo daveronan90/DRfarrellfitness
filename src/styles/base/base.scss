@@ -1,0 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: clamp(1rem, calc(-0.875rem + 8.333vw), 3.5rem);
+  box-sizing: border-box;
+  background: $bg;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+#root {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+  }
+}
+
+#root > header {
+  grid-area: 1/1/2/2;
+}
+
+#root > main {
+  grid-area: 2/1/3/2;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto minmax(0, 800px) auto;
+}
+
+#root > main > footer {
+  grid-area: 2/1/3/4;
+}
+
+#root > main {
+  margin-top: 5% 0;
+  text-align: justify;
+  font-weight: 600;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.list {
+    li {
+      list-style: none;
+
+      &::before {
+        padding-right: $s-size;
+        content: "-";
+        color: $main;
+      }
+    }
+    text-align: left;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  div:first-child {
+    grid-area: 1/2/2/3;
+  }
+  div.full-width {
+    grid-area: 1/1/2/4;
+
+    font-size: $m-size;
+    ul {
+      text-align: center;
+    }
+  }
+}

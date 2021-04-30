@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./MainVideo.scss";
-
 const MainVideo = ({ videoUrl }) => {
   return (
     <video autoPlay muted disablePictureInPicture playsInline loop>

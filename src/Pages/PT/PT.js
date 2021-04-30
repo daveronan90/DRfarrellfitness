@@ -1,10 +1,9 @@
 import React from "react";
+
 import MainVideo from "../../components/MainVideo/MainVideo";
 import Member from "../../components/Member/Member";
 
 import team from "../../fixtures/team";
-
-import "./PT.scss";
 
 const PT = () => {
   return (
@@ -23,7 +22,7 @@ const PT = () => {
           motivate you.
         </p>
         <h2>How it works</h2>
-        <ul>
+        <div className="list">
           <li>Come in and meet your instructor</li>
           <li>Discuss a plan and set short and long term goals</li>
           <li>Get your 3D Body Composition Scan</li>
@@ -38,13 +37,13 @@ const PT = () => {
             Once we are confident we will progress to our fitness and mobility
             testing
           </li>
-        </ul>
+        </div>
         <h2>Our Team</h2>
 
         {team.map((member) => (
           <Member {...member} />
         ))}
-        <h4>ALL YOU NEED TO DO IS TAKE THE FIRST STEP AND CALL US</h4>
+        <h3>ALL YOU NEED TO DO IS TAKE THE FIRST STEP AND CALL US</h3>
       </div>
     </div>
   );

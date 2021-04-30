@@ -1,8 +1,6 @@
 import React from "react";
 import MainVideo from "../../components/MainVideo/MainVideo";
 
-import "./Golf.scss";
-
 const Golf = () => {
   return (
     <div className="golf-page full-width">
@@ -71,17 +69,17 @@ const Golf = () => {
         <div>
           TPI Assessment Before & After
           <br />
-          Nutritional Advice
+          10 Trackman Sessions (1Hour)
           <br />
           3D Body Scan (optional)
+          <br />
+          Nutritional Advice
           <br />
           Mobility Programme
           <br />
           Yardage Assessment
           <br />
           Skills Test
-          <br />
-          10 Trackman Sessions (1Hour)
         </div>
       </div>
     </div>

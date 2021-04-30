@@ -3,7 +3,8 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import HomePage from "./Pages/HomePage/HomePage";
 
-import "./App.scss";
+import "./styles/styles.scss";
+
 import Classes from "./Pages/Classes/Classes";
 import PT from "./Pages/PT/PT";
 import PhysicalTherapy from "./Pages/PhysicalTherapy/PhysicalTherapy";

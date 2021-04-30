@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
-import "./ModalForm.scss";
-
 const ModalForm = ({ modalShow, setModalShow }) => {
   const [userInfo, setUserInfo] = useState({
     name: "",

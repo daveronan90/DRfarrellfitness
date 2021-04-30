@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./ServiceCard.scss";
-
 const ServiceCard = ({ routeUrl, title, imageUrl }) => {
   return (
     <div className="service__card">

@@ -1,0 +1,77 @@
+.personel {
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    .img {
+      transform: scale(90%);
+      transition: $hover-trans;
+    }
+    span {
+      color: $main;
+      transition: $hover-trans;
+    }
+  }
+  h5 {
+    margin: $s-size 0;
+    color: $main;
+  }
+}
+
+.member-bio-enter {
+  opacity: 0;
+  transform: translateY(-110%);
+}
+
+.member-bio-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: $slide;
+}
+
+.member-bio-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.member-bio-exit-active {
+  opacity: 0;
+  transform: translateY(-110%);
+  transition: $slide;
+}
+
+.member-modal {
+  color: $bg;
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(212, 212, 212);
+  overflow-y: auto;
+
+  h2 {
+    color: $main;
+  }
+
+  .member-info {
+    width: 55%;
+    padding: $s-size;
+    word-wrap: break-word;
+    font-size: clamp($s-size, 1.5ch, $l-size);
+    overflow-y: auto;
+    
+    .member-desc{
+      word-break: break-all;
+    }
+  }
+
+  .member-img {
+    position: fixed;
+    width: 38%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./PriceCard.scss";
-
 const PriceCard = ({
   offerType,
   title,
@@ -14,9 +12,9 @@ const PriceCard = ({
   return (
     <div className="price__card">
       <div className="price__card__1">
-        <p>
+        <h4>
           {offerType} <span>{title}</span>
-        </p>
+        </h4>
       </div>
       <div className="price__card__2">
         <div>

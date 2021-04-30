@@ -2,8 +2,6 @@ import React from "react";
 import ClassesTimetable from "../../components/ClassesTimetable/ClassesTimetable";
 import MainVideo from "../../components/MainVideo/MainVideo";
 
-import "./Classes.scss";
-
 const Classes = () => {
   return (
     <div className="classes-page full-width">

@@ -1,10 +1,10 @@
 import React from "react";
-import "./HomePage.scss";
+
 import MainVideo from '../../components/MainVideo/MainVideo'
+import Carousel from "../../components/Carousel/Carousel";
+
 import services from "../../fixtures/services";
 import priceCards from "../../fixtures/priceCards";
-
-import Carousel from "../../components/Carousel/Carousel";
 
 const HomePage = () => {
   return (

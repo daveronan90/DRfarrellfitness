@@ -1,9 +1,10 @@
 import React from "react";
+
 import Carousel from "../../components/Carousel/Carousel";
+
 import nutritionImgs from "../../fixtures/nutritionImgs";
 import shopData from "../../fixtures/shopData";
 
-import "./Nutrition.scss";
 
 const Nutrition = () => {
   return (

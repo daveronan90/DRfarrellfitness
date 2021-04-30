@@ -1,0 +1,44 @@
+.golf-page {
+  .golf-content {
+    width: 80%;
+    margin: $s-size auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .golf-info {
+      max-width: 480px;
+      margin: 0 $s-size;
+    }
+    img {
+      max-width: 480px;
+    }
+  }
+
+  .golf-price-table {
+    width: 80%;
+    margin: $s-size auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(70px, 400px));
+    grid-template-rows: repeat(3, auto);
+    font-size: clamp(7px, 2vw, 20px);
+    text-align: center;
+
+    > * {
+      border-right: 1px solid $main;
+    }
+
+    :nth-child(n + 1):not(:nth-child(n + 4)) {
+      background: $main;
+      padding: $s-size 0;
+      margin: 0.5rem 0.2rem;
+    }
+    :nth-child(n + 4):not(:nth-child(n + 7)) {
+        color: $main;
+        padding: 0.5rem;
+    }
+    :nth-child(6n), :nth-child(9) {
+        border-right: none;
+    }
+  }
+}

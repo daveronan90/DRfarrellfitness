@@ -1,8 +1,8 @@
 import React from "react";
-import MainVideo from "../../components/MainVideo/MainVideo";
-import teamTraining from "../../fixtures/teamTraining";
 
-import "./TeamTraining.scss";
+import MainVideo from "../../components/MainVideo/MainVideo";
+
+import teamTraining from "../../fixtures/teamTraining";
 
 const TeamTraining = () => {
   return (

@@ -1,0 +1,7 @@
+.carousel__container {
+  margin: $l-size auto;
+  
+  .slick-dots li button::before {
+    color: $main;
+  }
+}
