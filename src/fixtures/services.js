@@ -1,7 +1,7 @@
 const services = [
   {
     id: 1,
-    imageUrl: "FFfeathered.png",
+    imageUrl: "openingHours.jpg",
     title: "OPEN GYM",
     routeUrl: "/gym",
   },
@@ -55,7 +55,7 @@ const services = [
   },
   {
     id: 10,
-    imageUrl: "golfSpecificTraining.jpg",
+    imageUrl: "golfServiceCard.jpeg",
     title: "GOLF SPECIFIC TRAINING",
     routeUrl: "/golf",
   },

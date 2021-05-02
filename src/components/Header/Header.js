@@ -6,9 +6,12 @@ import { CSSTransition } from "react-transition-group";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { ReactComponent as Title } from "./title_white.svg";
+
 import ModalForm from "../ModalForm/ModalForm";
 
 import services from "../../fixtures/services";
+import { motion } from "framer-motion";
 
 const Header = ({ toggleNav, setToggleNav }) => {
   const [modalShow, setModalShow] = useState(false);
@@ -16,11 +19,17 @@ const Header = ({ toggleNav, setToggleNav }) => {
   return (
     <header>
       <Link to="/" onClick={() => setToggleNav(false)}>
-        <img src={`${process.env.PUBLIC_URL}/title-img2.png`} alt="title" />
+        <div className="title-logo">
+         <Title/>
+        </div>
       </Link>
-      <div className="burger" onClick={() => setToggleNav(!toggleNav)}>
+      <motion.div
+        whileHover={{ color: "rgb(223, 100, 13)" }}
+        className="burger"
+        onClick={() => setToggleNav(!toggleNav)}
+      >
         <FontAwesomeIcon icon={faBars} className="burger__icon" />
-      </div>
+      </motion.div>
       <button className="sign-up-button" onClick={() => setModalShow(true)}>
         SIGN UP NOW
       </button>

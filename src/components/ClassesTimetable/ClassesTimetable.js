@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 
+import { ReactComponent as FFLogo } from "../../assest/FF.svg";
+
 const ClassesTimetable = () => {
   const [zoomTable, setZoomTable] = useState(false);
   return (
     <div onClick={() => setZoomTable(!zoomTable)}>
-    <h3>CLASSES TIMETABLE {new Date().getFullYear()}</h3>
+      <h3>CLASSES TIMETABLE {new Date().getFullYear()}</h3>
       <div className="table" style={zoomTable ? {} : {}}>
         <div className="header">MONDAY</div>
         <div className="header">
-          <img
-            className="logo"
-            src={`${process.env.PUBLIC_URL}/FFfeathered.png`}
-            alt="FF"
-          />
+          <FFLogo className='tt-logo'/>
         </div>
         <div className="header">TUESDAY</div>
         <div className="header">WEDNESDAY</div>

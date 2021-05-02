@@ -25,19 +25,25 @@ const team = [
   },
   {
     title: "Trainer",
-    name: "Eoin",
+    name: "Eoghan",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut assumenda eius non molestiae autem ut ad iure perspiciatis consequatur corporis dolor, nemo, .",
-    imageUrl: "/eoin.jpg",
+    imageUrl: "/eoghan.jpg",
     teamDesc:
       "Shannon has a huge passion and interest in the health and fitness industry. She’s very outgoing and chatty. Shannon loves the overall concept of health and fitness, and she loves getting to know people on a personal level to help them out the best she can with there goals. Her main interest is Strength & Conditioning. She has competed in Crossfit and Olympic lifting competitions and she has achieved 1st place in some. She has been playing sports, such as soccer and football, throughout her whole life and she has represented her college. Shannon is here to help you all you have to do is ask.",
     qualifications: [
-      "Currently studying a Bachelor Honours Degree in Sports Coaching and Performance",
-      "National Dipoloma in Sports Massage Therapy",
-      "NCEF Personal Trainer Certificate",
-      "Level 1 Weightlifting Ireland",
-      "FAI Kick Start 1 & 2",
-      "Foundation Athletics leader",
+      "Bachelor of Business (Honours) Degree in Recreation and Sports Management- REPS Ireland Gym Instructor",
+      "Group Fitness Instructor- Functional Fitness Coach (FFC)",
+      "SCC Specialist in Advanced Training Techniques ",
+      "Post Operative Client Strength Training Coach",
+      "Instant Speed: Acceleration and Agilty Course",
+      "SCC Muscles and Movement Specialist (MMS)",
+      "SCC Corrective Exercise Specialist (CES)",
+      "SCC Strength Training Specialist (STS)",
+      "Adapted Physical Activity Instructor",
+      "Udemy: Soccer Conditioning",
+      "FAI Football for All",
+      "Barbell Rehab Coach",
     ],
   },
   {
@@ -53,8 +59,8 @@ const team = [
       "National Dipoloma in Sports Massage Therapy",
       "NCEF Personal Trainer Certificate",
       "Level 1 Weightlifting Ireland",
-      "FAI Kick Start 1 & 2",
       "Foundation Athletics leader",
+      "FAI Kick Start 1 & 2",
     ],
   },
 ];

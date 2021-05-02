@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { ReactComponent as FFLogo } from "../../assest/FF.svg";
+
 const GymTimetable = () => {
   const [zoomTable, setZoomTable] = useState(false);
   return (
@@ -8,11 +10,7 @@ const GymTimetable = () => {
       <div className="table-gym" style={zoomTable ? {} : {}}>
         <div className="header">MONDAY</div>
         <div className="header">
-          <img
-            className="logo"
-            src={`${process.env.PUBLIC_URL}/FFfeathered.png`}
-            alt="FF"
-          />
+          <FFLogo />
         </div>
         <div className="header">TUESDAY</div>
         <div className="header">WEDNESDAY</div>

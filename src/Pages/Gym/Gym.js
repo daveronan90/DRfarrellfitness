@@ -5,7 +5,7 @@ import MainVideo from "../../components/MainVideo/MainVideo";
 const Gym = () => {
   return (
     <div className="gym-page full-width">
-      <MainVideo videoUrl="/mainVideo.mp4" />
+      <MainVideo videoUrl="/OpenGym.mp4" />
       <div className="gym-content">
         <GymTimetable />
       </div>
