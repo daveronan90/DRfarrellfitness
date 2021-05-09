@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DRfarrellfitness/static/css/main.81b180ee.chunk.css",
-    "main.js": "/DRfarrellfitness/static/js/main.1e4c19df.chunk.js",
-    "main.js.map": "/DRfarrellfitness/static/js/main.1e4c19df.chunk.js.map",
+    "main.js": "/DRfarrellfitness/static/js/main.7c6392ae.chunk.js",
+    "main.js.map": "/DRfarrellfitness/static/js/main.7c6392ae.chunk.js.map",
     "runtime-main.js": "/DRfarrellfitness/static/js/runtime-main.a7da64b8.js",
     "runtime-main.js.map": "/DRfarrellfitness/static/js/runtime-main.a7da64b8.js.map",
     "static/css/2.504760e8.chunk.css": "/DRfarrellfitness/static/css/2.504760e8.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.504760e8.chunk.css",
     "static/js/2.d5b89036.chunk.js",
     "static/css/main.81b180ee.chunk.css",
-    "static/js/main.1e4c19df.chunk.js"
+    "static/js/main.7c6392ae.chunk.js"
   ]
 }
