@@ -38,7 +38,7 @@ const services = [
   {
     id: 7,
     imageUrl: "tenWeekBodyTransformations.jpeg",
-    title: "10 WEEK BODY TRANSFORMATIONS",
+    title: "10 WEEK TRANSFORMATIONS",
     routeUrl: "/transformations",
   },
   {
