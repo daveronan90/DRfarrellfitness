@@ -1,50 +1,41 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 import { Link } from "react-router-dom";
-import { CSSTransition } from "react-transition-group";
 
 import { ReactComponent as Title } from "./title_white.svg";
 
 import ModalForm from "../ModalForm/ModalForm";
 
-import services from "../../fixtures/services";
 import NavButton from "./NavButton";
+import { motion } from "framer-motion";
+import NavMenu from "./NavMenu";
+import { NavModalContext } from "../../App";
 
-const Header = ({ toggleNav, setToggleNav }) => {
-  const [modalShow, setModalShow] = useState(false);
+const Header = () => {
+  const { setModalShow, toggleNav, setToggleNav } = useContext(NavModalContext);
 
   return (
-    <header>
+    <motion.header
+      animate={
+        toggleNav ? { background: "chocolate" } : { background: "rgb(0,0,0)" }
+      }
+    >
       <Link to="/" onClick={() => setToggleNav(false)}>
         <div className="title-logo">
           <Title />
         </div>
       </Link>
-      <NavButton setToggleNav={setToggleNav} toggleNav={toggleNav} />
-      <button className="sign-up-button" onClick={() => setModalShow(true)}>
+      <NavButton />
+      <motion.button
+        className="sign-up-button"
+        whileHover={{ scale: 1.2 }}
+        onClick={() => setModalShow(true)}
+      >
         SIGN UP NOW
-      </button>
-      <nav>
-        {services.map(({ title, routeUrl }, index) => (
-          <CSSTransition
-            in={toggleNav}
-            unmountOnExit
-            timeout={500}
-            classNames="menu"
-            key={`${index}`}
-          >
-            <Link
-              to={routeUrl}
-              className={`nav__link`}
-              onClick={() => setToggleNav(!toggleNav)}
-            >
-              {title}
-            </Link>
-          </CSSTransition>
-        ))}
-      </nav>
-      <ModalForm modalShow={modalShow} setModalShow={setModalShow} />
-    </header>
+      </motion.button>
+      <NavMenu />
+      <ModalForm />
+    </motion.header>
   );
 };
 

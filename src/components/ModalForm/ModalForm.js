@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { CSSTransition } from "react-transition-group";
+import { NavModalContext } from "../../App";
 
-const ModalForm = ({ modalShow, setModalShow }) => {
+const ModalForm = () => {
+  const { modalShow, setModalShow } = useContext(NavModalContext);
   const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",

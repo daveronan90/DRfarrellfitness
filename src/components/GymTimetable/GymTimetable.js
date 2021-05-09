@@ -7,7 +7,7 @@ const GymTimetable = () => {
   return (
     <div onClick={() => setZoomTable(!zoomTable)}>
       <h3>OPEN GYM TIMETABLE {new Date().getFullYear()}</h3>
-      <div className="table-gym" style={zoomTable ? {} : {}}>
+      <div className="timetable" style={zoomTable ? {} : {}}>
         <div className="header">MONDAY</div>
         <div className="header">
           <FFLogo />

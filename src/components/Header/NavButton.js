@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 
 import { motion } from "framer-motion";
+import { NavModalContext } from "../../App";
 
-const NavButton = ({ setToggleNav, toggleNav }) => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+const NavButton = () => {
+  const { toggleNav, setToggleNav } = useContext(NavModalContext);
 
   return (
     <div
       onClick={() => {
-        setToggleMenu(!toggleMenu);
         setToggleNav(!toggleNav);
       }}
     >
       <svg width="36" height="36">
         <motion.circle
-          animate={toggleMenu ? { opacity: 1 } : { opacity: 0 }}
+          animate={toggleNav ? { opacity: 1 } : { opacity: 0 }}
           cx="18"
           cy="18"
           r="18"
@@ -22,7 +22,7 @@ const NavButton = ({ setToggleNav, toggleNav }) => {
         />
         <motion.rect
           animate={
-            toggleMenu
+            toggleNav
               ? { rotate: -45, x: 0, y: 4.5, fill: "rgb(223, 100, 13)" }
               : { rotate: 0, x: 0, y: 0 }
           }
@@ -36,7 +36,7 @@ const NavButton = ({ setToggleNav, toggleNav }) => {
         />
         <motion.rect
           animate={
-            toggleMenu
+            toggleNav
               ? { rotate: 45, x: 0, y: -4.5, fill: "rgb(223, 100, 13)" }
               : { rotate: 0, x: 0, y: 0 }
           }

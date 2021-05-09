@@ -1,4 +1,7 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useContext } from "react";
+
+import { NavModalContext } from "../../App";
 
 const PriceCard = ({
   offerType,
@@ -9,6 +12,8 @@ const PriceCard = ({
   info,
   buttonCaption,
 }) => {
+  const { modalShow, setModalShow } = useContext(NavModalContext);
+
   return (
     <div className="price__card">
       <div className="price__card__1">
@@ -27,11 +32,24 @@ const PriceCard = ({
       </div>
       {info.map((item) => (
         <div className="price__card__info" key={item[0]}>
-          <p className={item[1] ? "important" : ""}>{item}</p>
+          <motion.p
+            animate={
+              item[1]
+                ? {
+                    scale: [1, 1.2, 1],
+                    transition: { repeat: Infinity },
+                  }
+                : {}
+            }
+          >
+            {item}
+          </motion.p>
         </div>
       ))}
       <div className="price__card__button">
-        <button>{buttonCaption}</button>
+        <button onClick={() => setModalShow(!modalShow)}>
+          {buttonCaption}
+        </button>
       </div>
     </div>
   );
