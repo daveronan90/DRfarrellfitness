@@ -1,6 +1,8 @@
 import React from "react";
 import ClassesTimetable from "../../components/ClassesTimetable/ClassesTimetable";
 import MainVideo from "../../components/MainVideo/MainVideo";
+import PricingClasses from "../../components/Pricing/PricingClasses";
+import PricingGymClasses from "../../components/Pricing/PricingGymClasses";
 
 const Classes = () => {
   return (
@@ -55,6 +57,8 @@ const Classes = () => {
           <li>Have fun in a safe environment</li>
         </div>
       </div>
+      <PricingClasses />
+      <PricingGymClasses />
     </div>
   );
 };

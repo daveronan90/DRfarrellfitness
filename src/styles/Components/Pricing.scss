@@ -1,0 +1,22 @@
+.price-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $l-size;
+
+  * {
+    margin: 1rem;
+    font-weight: 400;
+  }
+  .price-plan-title {
+    font-weight: 600;
+    border: 1px solid white;
+    padding: $s-size;
+  }
+  
+  .price-plan-subtitle {
+    text-align: center;
+    color: $main;
+  }
+}

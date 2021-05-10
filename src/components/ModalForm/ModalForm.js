@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import { NavModalContext } from "../../App";
 
+import emailjs from "emailjs-com";
+
 const ModalForm = () => {
   const { modalShow, setModalShow } = useContext(NavModalContext);
   const [userInfo, setUserInfo] = useState({
@@ -20,11 +22,30 @@ const ModalForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const templateParams = {
+      name,
+      email,
+      phone,
+      message,
+    };
+
+    emailjs
+      .send(
+        "service_96179bg",
+        "template_yzej7hf",
+        templateParams,
+        "user_CvNDBwrqvJvmrZ8szGIjh"
+      )
+      .then(
+        (result) => {
+          alert("Thanks for signing up!");
+        },
+        (error) => alert("Something went wrong, please try again later")
+      );
+
     setModalShow(false);
 
     setUserInfo({ name: "", email: "", phone: "", message: "" });
-
-    console.log(userInfo);
   };
 
   const { name, phone, email, message } = userInfo;
